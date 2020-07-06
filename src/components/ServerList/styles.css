@@ -1,0 +1,25 @@
+#ContainerServerList {
+    grid-area: SL;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--tertiary);
+    padding: 11px 0px;
+
+    max-height: 100vh;
+    overflow-y: scroll;
+    
+}
+
+#ContainerServerList::-webkit-scrollbar {
+    display: none;
+}
+
+#SeparatorServerList {
+    width: 32px;
+    height: 2px;
+    border-bottom: 2px solid var(--quaternary);
+    margin-bottom: 8px;
+}

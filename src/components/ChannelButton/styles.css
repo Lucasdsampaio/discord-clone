@@ -1,0 +1,22 @@
+#ContainerChannelButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    padding: 5px 3px;
+    border-radius: 5px;
+
+    background-color: transparent;
+    transition: background-color .2s;
+}
+
+#DivChannelButton {
+    display: flex;
+    align-items: center;
+}
+
+#DivChannelButton span {
+    margin-left: 5px;
+    color: var(--senary);
+}
