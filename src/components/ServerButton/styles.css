@@ -38,6 +38,7 @@ img {
     content: '';
     display: inline;
 }
+
 [mentions]::after {
     background-color: var(--notification);
     width: auto;

@@ -1,19 +1,22 @@
 import React from 'react'
 import { Hashtag } from 'styled-icons/heroicons-outline'
+import { PersonAdd, Settings } from 'styled-icons/material'
 import './styles.css'
 
-const ChannelButton = () => {
+const ChannelButton = ({
+    channelname,
+    selected
+}) => {
     return (
-        <div id='ContainerChannelButton'>
-
+        <div id='ContainerChannelButton' className={selected ? 'active' : ''}>
             <div id='DivChannelButton'>
-                <Hashtag id='IconChannelButton'/>
-                <span id='SpanChannelButton'>chat-livre</span>
+                <Hashtag id='HashtagChannelButton'/>
+                <span id="SpanChannelButton"
+                channelname={channelname}></span>
             </div>
-
             <div id='DivChannelButton'>
-                <Hashtag id='IconChannelButton'/>
-                <Hashtag id='IconChannelButton'/>
+                <PersonAdd id='PersonAddChannelButton'/>
+                <Settings id='SettingsChannelButton'/>
             </div>
         </div>
     )

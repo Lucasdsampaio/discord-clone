@@ -1,6 +1,10 @@
 import React from 'react'
 import { Add } from 'styled-icons/material'
+import ChannelButton from '../ChannelButton'
 import './styles.css'
+
+import ServerButton from '../ServerButton'
+
 
 const ChannelList = () => {
     return (
@@ -11,11 +15,12 @@ const ChannelList = () => {
                 <Add id='IconChannelList'/>
             </div>
 
-            {/* <div id='ButtonChannelList' channelName='chat-livre'></div>
-            <div id='ButtonChannelList' channelName='trabalho'></div>
-            <div id='ButtonChannelList' channelName='lolzinho'></div>
-            <div id='ButtonChannelList' channelName='cs-go'></div> */}
-            
+
+            <ChannelButton channelname="chat-livre"/>
+            <ChannelButton channelname="trabalho"/>
+            <ChannelButton channelname="lolzinho"/>
+            <ChannelButton channelname="csgo"/>
+            <ChannelButton channelname="texte"/>
 
         </div>
     )

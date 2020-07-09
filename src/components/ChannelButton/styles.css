@@ -20,3 +20,38 @@
     margin-left: 5px;
     color: var(--senary);
 }
+
+[channelname]::after {
+    content: attr(channelname);
+}
+
+
+#ContainerChannelButton:active, 
+#ContainerChannelButton:hover {
+    background-color: var(--quinary);
+}
+
+#DivChannelButton span:active,
+#DivChannelButton span:hover {
+    color: var(--white);
+}
+
+#HashtagChannelButton {
+    width: 20px;
+    height: 20px;
+    color: var(--symbol);
+}
+
+#PersonAddChannelButton,
+#SettingsChannelButton {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    color: var(--symbol);
+    cursor: pointer;
+    transition: color .2s;
+}
+#SettingsChannelButton:hover,
+#PersonAddChannelButton:hover {
+    background-color: var(--white);
+}
